@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Projet FAMAE</title>
+</head>
+
+<body id="particles-js">
+    <button class="menu-toggle"></button>
+    <div id="play">COMMENCER</div>
+<nav>
+    <ul class="menu">
+        <li data-text="Visualise l'impact de l'alimentation sur l'eau">Visualise l'impact de l'alimentation sur l'eau</li>
+        <li data-text="Jeu : Crée ton repas responsable !">Jeu : Crée ton repas responsable !</li>
+        <li data-text="Tableau d'honneur">Tableau d'honneur</li>
+    </ul>
+</nav>
+    <div id="container">
+        <img id="logo" src="diet.png" />
+        <h1>FAMAE Project</h1>
+        <h2>An educative playground</h2>
+    </div>
+    <div id="info1"><h3>VISUALISE L’IMPACT DE L’ALIMENTATION SUR LA CONSOMMATION EN EAU</h3><img id="groceries" src="265733.svg" /></div>
+
+    <div id="info2"><img id="groceries" src="groceries.png" /><h3>CRÉE UN REPAS <b>RESPONSABLE</b> VIS-À-VIS DE L’EAU</h3><div id="egal">=</div><img id="water" src="water.png" /></div>
+
+    <div id="thanks">Cette application a été créée dans le cadre du <a href="https://famae.earth/fr/">FAMAE WATER CHALLENGE: PRECIOUS WATER!</a></div>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        $('button').on('click', function(){
+            $('body').toggleClass('open');
+        });
+    </script>
+</body>
+</html>
