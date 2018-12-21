@@ -1,0 +1,295 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #fff;
+}
+
+#color1 {
+	background: linear-gradient(rgb(40, 52, 50), #121b1c);
+}
+
+#color2 {
+	background: linear-gradient(#35372a, #1a2c2e);
+}
+
+#color3 {
+	background: linear-gradient(#1e3e43, #1a2c2e);
+}
+
+#color4 {
+	background: linear-gradient(#35372a, #1a2c2e);
+}
+
+header {
+	margin-bottom: calc(100vh + 50px);
+}
+
+#h1-1 {
+	position: absolute;
+	top: calc(50% - 1.6em);
+	left: calc(50% - 3.6em);
+	text-transform: uppercase;
+	font-size: 5em;
+	z-index: 99;
+}
+
+#h1-2 {
+	position: absolute;
+	top: calc(50% - 1.6em);
+	left: calc(50% - 3.8em);
+	text-transform: uppercase;
+	font-size: 5em;
+	z-index: 99;
+}
+
+#h1-3 {
+	position: absolute;
+	top: calc(50% - 1.6em);
+	left: calc(50% - 4.2em);
+	text-transform: uppercase;
+	font-size: 5em;
+	z-index: 99;
+}
+
+#h1-4 {
+	position: absolute;
+	top: calc(50% - 1.6em);
+	left: calc(50% - 4.8em);
+	text-transform: uppercase;
+	font-size: 5em;
+	z-index: 99;
+}
+
+#arrayback {
+	position: fixed;
+	top: 1.6em;
+	left: 20px;
+	width: 30px;
+	background-color: rgba(255, 255, 255, 0.448);
+	border-radius: 50%;
+	padding: 6px;
+	z-index: 3;
+	opacity: 0.7;
+}
+
+.cbp-so-scroller {
+	margin-top: 3em;
+	overflow: hidden;
+}
+
+.cbp-so-section {
+	margin-bottom: 15em;
+}
+
+.cbp-so-section:before,
+.cbp-so-section:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-so-section:after {
+	clear: both;
+}
+
+.cbp-so-section h2 {
+	font-size: 4em;
+	font-weight: 300;
+	line-height: 1;
+}
+
+.cbp-so-section p {
+	font-size: 1.8em;
+	font-weight: 300;
+}
+
+.cbp-so-side {
+	width: 30%;
+	float: left;
+	margin: 0;
+	min-height: 12em;
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	-moz-transition: -moz-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.cbp-so-side:before,
+.cbp-so-side:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-so-side:after {
+	clear: both;
+}
+
+.cbp-so-side-right {
+	float: left;
+	margin-left: 3em;
+}
+
+.cbp-so-side-left {
+	float: right;
+	margin-right: 10em;
+}
+
+.cbp-so-side-right figure {
+	float: left;
+}
+
+.cbp-so-side-left figure {
+	float: right;
+}
+
+.cbp-so-init .cbp-so-side {
+	opacity: 0;
+}
+
+.cbp-so-init .cbp-so-side-left {
+	-webkit-transform: translateX(80px);
+	-moz-transform: translateX(80px);
+	transform: translateX(80px);
+}
+
+.cbp-so-init .cbp-so-side-right {
+	-webkit-transform: translateX(-80px);
+	-moz-transform: translateX(-80px);
+	transform: translateX(-80px);
+}
+
+.cbp-so-section.cbp-so-animate .cbp-so-side-left,
+.cbp-so-section.cbp-so-animate .cbp-so-side-right {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+#hjjj {
+	text-decoration: none;
+	color: white;
+}
+
+#back {
+	text-align: center;
+	margin-bottom: 2.4em;
+	margin-top: -3em;
+	font-size: 1.4em;
+	font-weight: lighter;
+}
+
+@media screen and (max-width: 173.5em) {
+	.cbp-so-scroller {
+		font-size: 65%;
+	}
+
+	.cbp-so-section h2 {
+		margin: 0;
+	}
+
+	.cbp-so-side figure {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 41.125em) {
+	.cbp-so-side {
+		float: none;
+		width: 100%;
+	}
+
+	.cbp-so-side img {
+		max-width: 100%;
+	}
+}
+
+/* ---- reset ---- */ body{ margin:0;} #particles-js{ position:fixed; width: 100%; height: 100%; background-color: #1e3e4300; background-image: url(""); background-repeat: repeat; z-index: -2;}
+
+#testtt {
+	position: absolute;
+	width: 50px;
+	top: 90%;
+	left: calc(50% - 25px);
+}
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+ul {
+	font-family: "PT Sans";
+	position: fixed;
+	right: -90px;
+	top: calc(50% - 10.5em);
+  display:block;
+  width:150px;
+  margin:20px auto 0;
+  color: rgba(0, 0, 0, 0);
+  z-index: 9999;
+}
+li {
+  padding:5px 0;
+  cursor:pointer;
+  text-indent:-7px;
+  border-left:2px solid rgba(255, 255, 255, 0.126);
+}
+  li:before {
+  content:"\25CF";
+  font-size:20px;
+  vertical-align:middle;
+  color:rgba(255, 255, 255, 0.425);
+}
+
+  li:hover:before {
+  color:rgba(255, 255, 255, 0.425);
+}
+  li a {
+	  position: relative;
+	  top: 10px;
+    overflow:hidden;
+    display:inline-block;
+    color:rgba(255, 255, 255, 0.425);
+    text-indent:100px;
+    width:80px;
+    text-decoration:none;
+    text-transform:uppercase;
+    padding:5px;
+    transition:0.2s ease;
+    margin:2px 0 0 -96px;
+  }
+  
+li:hover a {
+  background-color:rgba(255, 255, 255, 0);
+  color:rgb(201, 201, 201);
+  text-align:right;
+  text-indent:0;
+}
+
+.scrolled {
+	position: relative;
+	top: 2px;
+	overflow: visible;
+	text-indent:27px;
+}
+
+.container-img {
+	position: absolute;
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	top: calc(50% - 220px);
+	left: calc(50% - 200px);
+}
+
+#testttt {
+	position: relative;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}

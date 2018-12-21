@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    {%load static%}
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>FAMAE</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+	</head>
+	<body>
+            <img id="planet" src="{% static 'logo eau.svg' %}" />
+        <h1>WATERVIZ</h1>
+<div class="info">Plateforme créée dans le cadre du <a href="https://famae.earth/fr/" style="color:rgba(225, 255, 255, .8);;">FAMAE Water Challenge</a>.</div>
+<section class="cd-slider">
+  <ul>
+    <li data-color="#466F92">
+      <div class="content" style="background-image:url({% static 'bottle-2032980_1920.jpg' %})">
+        <h2>Consommation</h2>
+        <a href="./consommation/"><button>explorer</button></a>
+      </div>
+    </li>
+    <li data-color="#466F92">
+      <div class="content" style="background-image:url({% static 'rice-plantation-1822444_1280.jpg'%})">
+        <h2>Alimentation</h2>
+        <a href="./alimentation/"><button>explorer</button></a>
+      </div>
+    </li>
+    <li data-color="#466F92">
+      <div class="content" style="background-image:url({% static 'drought-3618653_1920.jpg)'%}">
+        <h2>Water Stress</h2>
+        <a href="./water-stress/"><button>explorer</button></a>
+      </div>
+    </li>
+    <li data-color="#466F92">
+        <div class="content" style="background-image:url({% static 'tap-357252_1920.jpg'%})">
+            <h2>Ressource Limitée</h2>
+            <a href="./limited-ressource/"><button>explorer</button></a>
+        </div>
+      </li>
+  </ul>
+  <nav>
+    <div><a class="prev" href="#"></a></div>
+    <div><a class="next" href="#"></a></div>
+  </nav>
+</section>
+<script src="{% static 'home.js'%}"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="{% static 'app.js'%}"></script>
+    </body>
+</html>

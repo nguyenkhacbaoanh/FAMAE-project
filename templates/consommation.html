@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	{% load static %}
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>FAMAE</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/component.css'%}" />
+	</head>
+	<body id="color3">
+		<div id="particles-js"></div>
+		<div class="container">
+			<header class="clearfix">
+				<h1 id="h1-3">Consommation</h1>
+				<a href="../"><img id="arrayback" src="{% static '271218.svg'%}"/></a>
+				<nav>
+				</nav>
+			</header>
+			<div>
+				<ul>
+				  <li><a class="cc" href="" title="home">home</a></li>
+				  <li><a href="#test-1" title="link1">1</a></li>
+				  <li><a href="#test-2" title="link1">2</a></li>
+				  <li><a href="#test-3" title="link1">3</a></li>
+				  <li><a href="#test-4" title="link1">4</a></li>
+			  </ul>
+			  </div>
+			<div class="container-img"><img id="testttt" src="{% static 'bottle-2032980_1920.jpg'%}" /></div>
+			<img id="testtt" src="{% static 'images/scroll.gif'%}" />
+			<div id="cbp-so-scroller" class="cbp-so-scroller">
+				<section class="cbp-so-section" id="test-1">
+					<article class="cbp-so-side cbp-so-side-left">
+						<h2>Prélèvements en fonction des secteurs</h2>
+						<p>Les secteurs représentés sont : Agriculture, Industrie et Domestique.</p>
+					</article>
+					<figure class="cbp-so-side cbp-so-side-right">
+							<iframe width="700" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~supig/37.embed"></iframe>
+							<a href="../pie-chart-1/"><button>view</button></a>
+					</figure>
+				</section>
+				<section class="cbp-so-section" id="test-2">
+					<figure class="cbp-so-side cbp-so-side-left">
+							<iframe style="margin-left: -310px;" width="700" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~supig/21.embed"></iframe>
+							<a href="../bar-chart-1/"><button>view</button></a>
+					</figure>
+					<article class="cbp-so-side cbp-so-side-right">
+						<h2>Prévèvement annuel d'eau par habitant</h2>
+						<p></p>
+					</article>
+				</section>
+				<section class="cbp-so-section" id="test-3">
+					<article class="cbp-so-side cbp-so-side-left">
+						<h2>Traitement annuel des eaux usées domestiques</h2>
+						<p></p>
+					</article>
+					<figure class="cbp-so-side cbp-so-side-right">
+							<iframe width="700" height="400" frameborder="0" scrolling="yes" src="https://plot.ly/~supig/23.embed"></iframe>
+							<a href="../bar-chart-2/"><button>view</button></a>
+					</figure>
+				</section>
+				<section class="cbp-so-section" id="test-4">
+					<figure class="cbp-so-side cbp-so-side-left">
+							<iframe style="margin-left: -310px;" width="700" height="400"  frameborder="0" scrolling="no" src="https://plot.ly/~supig/25.embed"></iframe>
+							<a href="../map-1/"><button>view</button></a>
+					</figure>
+					<article class="cbp-so-side cbp-so-side-right">
+						<h2>Contrôle de l'irrigation par zone géographique</h2>
+						<p>L'irrigation est extrêment contrôlée en Chine, en Inde et aux US.</p>
+					</article>
+				</section>
+				<a href="../" id="hjjj"><div id="back">Retour</div></a>
+			</div>
+		</div>
+		<script src="{% static 'js/modernizr.custom.js'%}"></script>
+		<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="{% static 'app.js'%}"></script>
+		<script src="{% static 'js/classie.js'%}"></script>
+        <script src="{% static 'test.js'%}"></script>
+        <script src="{% static 'scroll.js'%}"></script>
+		<script src="{% static 'js/cbpScroller.js'%}"></script>
+		<script>
+			new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+		</script>
+	</body>
+</html>
