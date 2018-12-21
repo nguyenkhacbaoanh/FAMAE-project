@@ -4,7 +4,7 @@ import dash_core_components as dcc
 import dash_html_components as html 
 import plotly.graph_objs as go
 import random
-
+from django.conf import settings
 from dash.dependencies import Input, Output
 
 from django_plotly_dash import DjangoDash
@@ -14,7 +14,7 @@ import igraph as ig
 
 import pandas as pd
 
-with pd.ExcelFile("/Users/nguyenkhacbaoanh/dev/school-HETIC/Project/FAMAE/SavingWater/Dataset_Aquastat.xlsx") as xlsx:
+with pd.ExcelFile(settings.BASE_DIR + "/SavingWater/Dataset_Aquastat.xlsx") as xlsx:
     aquastat = pd.read_excel(xlsx, "aquastat", header=0, nrows=181)
     food = pd.read_excel(xlsx, "food", header=0)
     #geo = pd.read_excel(xlsx,"geo",header=0)
