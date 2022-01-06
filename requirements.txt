@@ -8,7 +8,7 @@ autobahn==18.12.1
 Automat==0.7.0
 basemap==1.2.0
 billiard==3.5.0.4
-celery==4.2.1
+celery==5.2.2
 certifi==2018.10.15
 channels==2.1.6
 channels-redis==2.3.2
